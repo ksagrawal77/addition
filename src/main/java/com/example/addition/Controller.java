@@ -15,4 +15,9 @@ public class Controller {
     public int addNumbers(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
         return additionService.add(num1, num2);
     }
+
+    @GetMapping("/")
+    public String home() {
+        return "Hello World";
+    }
 }
